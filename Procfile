@@ -1,0 +1,1 @@
+web: gunicorn llonamusikDB.wsgi --log-file -
