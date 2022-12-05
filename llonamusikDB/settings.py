@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-_ko7#fuml21cga+_cb0d&h67i+dfa+-)k+eok#19_0&pdgqe-c
 DEBUG = True
 #SECURE_SSL_REDIRECT = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'llona-musik.herokuapp.com','www.llona-musik.herokuapp.com',]
+ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
 CORS_ALLOW_METHODS = [
