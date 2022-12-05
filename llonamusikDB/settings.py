@@ -31,33 +31,7 @@ SECRET_KEY = 'django-insecure-_ko7#fuml21cga+_cb0d&h67i+dfa+-)k+eok#19_0&pdgqe-c
 DEBUG = False
 #SECURE_SSL_REDIRECT = True
 
-<<<<<<< HEAD
-ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com']
-CORS_ORIGIN_ALLOW_ALL = True
-CORS_ALLOW_CREDENTIALS = True
-CORS_ALLOW_METHODS = [
-    "DELETE",
-    "GET",
-    "OPTIONS",
-    "PATCH",
-    "POST",
-    "PUT",
-]
-CORS_ALLOW_HEADERS = [
-    "accept",
-    "accept-encoding",
-    "authorization",
-    "content-type",
-    'Authorization',
-    "dnt",
-    "origin",
-    "user-agent",
-    "x-csrftoken",
-    "x-requested-with",
-]
-=======
 ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com',]
->>>>>>> cd7132439db964bb5cc46646f64f1009a2c221bb
 # Application definition
 
 INSTALLED_APPS = [
