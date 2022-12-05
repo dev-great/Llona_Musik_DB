@@ -13,3 +13,8 @@ urlpatterns = [
     path('photos/', include('photo_gallery.urls', namespace='photo_gallery')),
 ]
 
+if settings.DEBUG:
+    urlpatterns += static(settings.MEDIA_URL,
+                          document_root=settings.MEDIA_ROOT)
+    urlpatterns += static(settings.STATIC_URL,
+                          document_root=settings.STATIC_ROOT)
