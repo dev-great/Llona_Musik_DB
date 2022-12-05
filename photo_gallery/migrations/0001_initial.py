@@ -10,25 +10,25 @@ class Migration(migrations.Migration):
     initial = True
 
     dependencies = [
-        ('event', '0001_initial'),
         ('tag', '__first__'),
+        ('event', '0001_initial'),
     ]
 
     operations = [
         migrations.CreateModel(
-            name='VideoGallery',
+            name='PhotoGallery',
             fields=[
                 ('id', models.BigAutoField(auto_created=True, primary_key=True, serialize=False, verbose_name='ID')),
                 ('title', models.CharField(max_length=100)),
                 ('note', models.TextField(max_length=1000)),
-                ('Video', cloudinary.models.CloudinaryField(max_length=255, verbose_name='video/')),
+                ('image', cloudinary.models.CloudinaryField(max_length=255, verbose_name='images/')),
                 ('created', models.DateTimeField(auto_now_add=True)),
                 ('event', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='event.event')),
                 ('tag', models.ForeignKey(null=True, on_delete=django.db.models.deletion.CASCADE, to='tag.tag')),
             ],
             options={
-                'verbose_name': 'Video',
-                'verbose_name_plural': 'VideoGallery',
+                'verbose_name': 'Photo',
+                'verbose_name_plural': 'PhotoGallery',
                 'ordering': ('created',),
             },
         ),
