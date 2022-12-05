@@ -31,7 +31,7 @@ SECRET_KEY = 'django-insecure-_ko7#fuml21cga+_cb0d&h67i+dfa+-)k+eok#19_0&pdgqe-c
 DEBUG = True
 SECURE_SSL_REDIRECT = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com',]
+ALLOWED_HOSTS = ['127.0.0.1','llonamusik.herokuapp.com',]
 # Application definition
 
 INSTALLED_APPS = [
