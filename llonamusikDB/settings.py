@@ -28,8 +28,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_ko7#fuml21cga+_cb0d&h67i+dfa+-)k+eok#19_0&pdgqe-c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
-#SECURE_SSL_REDIRECT = True
+DEBUG = True
+SECURE_SSL_REDIRECT = True
 
 ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com',]
 # Application definition
