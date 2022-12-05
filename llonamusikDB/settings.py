@@ -28,9 +28,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_ko7#fuml21cga+_cb0d&h67i+dfa+-)k+eok#19_0&pdgqe-c'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 #SECURE_SSL_REDIRECT = True
 
+<<<<<<< HEAD
 ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com']
 CORS_ORIGIN_ALLOW_ALL = True
 CORS_ALLOW_CREDENTIALS = True
@@ -54,6 +55,9 @@ CORS_ALLOW_HEADERS = [
     "x-csrftoken",
     "x-requested-with",
 ]
+=======
+ALLOWED_HOSTS = ['127.0.0.1', 'llonamusik.herokuapp.com','www.llonamusik.herokuapp.com',]
+>>>>>>> cd7132439db964bb5cc46646f64f1009a2c221bb
 # Application definition
 
 INSTALLED_APPS = [
@@ -68,7 +72,6 @@ INSTALLED_APPS = [
     'rest_framework',
     'rest_framework.authtoken',
     'rest_auth',
-    'corsheaders',
     'cloudinary',
 
     'tag',
@@ -80,7 +83,6 @@ INSTALLED_APPS = [
 ]
 
 MIDDLEWARE = [
-    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
     'django.middleware.common.CommonMiddleware',
