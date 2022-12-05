@@ -45,7 +45,6 @@ INSTALLED_APPS = [
     # DJANGO PLUGINS
     'rest_framework',
     'rest_framework.authtoken',
-    'rest_auth',
     'cloudinary',
 
     'tag',
