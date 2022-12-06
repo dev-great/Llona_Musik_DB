@@ -18,3 +18,8 @@ if settings.DEBUG:
                           document_root=settings.MEDIA_ROOT)
     urlpatterns += static(settings.STATIC_URL,
                           document_root=settings.STATIC_ROOT)
+
+
+admin.site.site_header ="Llona control panel"
+admin.site.index_title ="Administrators dashboard"
+admin.site.site_title ="Control panel"
